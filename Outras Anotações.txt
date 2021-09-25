@@ -1,0 +1,56 @@
+--- dir ----- Comando para listar, mostrar as pastas
+
+--- cd ---- Comando para entrar em alguma pasta, põem o cd logo em seguida nome da pasta ex: cd windons , cd users.
+
+--- cd .. --- esse comando ele volta uma pasta.
+
+--- cd / --- Esse comando retorna para a raiz.
+
+--- cls --- comando para limpar o terminal a tela.
+
+--- Tab --- depois de dar o comando cd colocar a inicial de uma pasta e aperta Tab ela auto completa sem precisar escrever o nome todo da pasta
+
+--- mkdir ---- comando para criar uma pasta dar este comando logo em seguida põem o nome da pasta que deseja ser criada.
+
+--- echo-- comando para printar algo na tela, dar echo logo em seguida escreve o que desejar que e dar enter para aparecer na tela
+
+--- echo > nomeTexto.txt --- para criar um arquivo, nesse caso foi criado um arquivo de tipo txt.
+
+--- del --- comando para deletar algo no caso colocar o comando del depois o nome da pasta ou arquivo para ser deletado, este comando deleta só os arquivos, mantendo as pastas.
+
+--- rmdir --- comando para deletar a pasta e tudo dento dela, ou seja rmdir nomeDaPasta /S /Q enter, fazendo isso a pasta será deletada.
+
+--- openssl sha1 nomeDoArquivo.txt --- Este comando sha1 ele é uma parte que encriptografa o codigo em uma string de 40 caracteres, é o que o git usa para identificar se a versão do código foi alterada ou não, toda vez que o código muda este valor tb muda, se o código voltar para como estava o valor do sha1 tb volta para onde estava dessa forma mantem o versionamento do código.
+
+--- ls -a --- mostra arquivos ocultos dentro das pastas no guit bash
+
+----------------------------------------
+
+configurações iniciais do git bash:
+
+git config --global user.email "Poem seu email aqui" --- 
+
+git config --global user.name "poem seu nome aqui"
+
+git init --- inicia uma pasta do git vazia com tudo que ele vai precisar, criando o repositório
+
+git add * ou git add . --- adiciona os arquivos modificados a pasta do git
+
+git commit -m"escreve o que desejar" --- junta os arquivos e põem nele um comentário que desejar
+
+git config --list --- traz toda configuração do seu git
+
+git config --global --unset user.email --- para retirar o nome de e-mail que esta atrelado ao git
+
+git config --global --unset user.name
+
+git remote add origin https:///github.com/... --- aqui vc cria um caminho da sua maquina para o seu guit passando a chave https que esa no servidor do 
+
+git clone https:///github.com/... -- aqui vc vai clonar o repositório da origin para a sua maquina
+
+git remote -v --- mostrar as lista de que tenho cadastrado, vai mostrar a origin que a pasta esta apontando do github
+
+git push origin master --- vai fazer o push para a master ou seja o que esta no seu computador vai para a origin
+
+git pull origin master --- esse comando vai pegar as coisas que estão na origin pra a sua maquina
+
